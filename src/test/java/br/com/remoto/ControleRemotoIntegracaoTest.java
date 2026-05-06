@@ -13,7 +13,7 @@ class ControleRemotoIntegracaoTest {
 
     static Stream<ControleRemoto> todosOsControles() {
         return Stream.of(
-                new ControleTV(),
+                new ControleTVTest(),
                 new ControleArCondicionado(),
                 new ControleSomBar()
         );
@@ -121,7 +121,7 @@ class ControleRemotoIntegracaoTest {
     @Test
     @DisplayName("ControleTV, Ar e Som devem ter comportamentos independentes")
     void dispositivosDevemTerEstadosIndependentes() {
-        ControleTV tv = new ControleTV();
+        ControleTVTest tv = new ControleTVTest();
         ControleArCondicionado ar = new ControleArCondicionado();
         ControleSomBar som = new ControleSomBar();
 
